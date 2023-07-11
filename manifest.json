@@ -1,0 +1,22 @@
+{
+    "name": "Website Time Tracker",
+    "version": "1.0",
+    "description": "Tracks the time spent on websites || Track your time spent while surfing  || best chrome extension",
+    "permissions": ["tabs", "activeTab", "storage"],
+    "host_permissions": [
+      "http://*/*",
+      "https://*/*"
+    ],
+    "manifest_version": 3,
+    "action": {
+      "default_title": "Tracks time spent on websites per session"
+    },
+    "background": {
+      "service_worker" : "background.js"
+    },
+    "options_page": "index.html",
+    "icons": {
+      "16": "assests/favicon_io/favicon-16x16.png",
+      "32": "assests/favicon_io/favicon-32x32.png"
+    }
+  }
